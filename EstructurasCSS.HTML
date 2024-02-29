@@ -8,49 +8,92 @@
     <!-- <link rel="stylesheet" href="styles.css"> -->
     <style>
         body{
-            background: #f0e9d8;
+            background: #c28bf3;
             margin: 0;
             padding: 0;
             color: rgb(0, 0, 0);
             text-align: center;
             font-size: 16px;
             box-sizing: border-box;
-            position:relative
         }
         nav{
             background: #e19ace;
-            padding:1em;
-            top: 0;
-            left: 0;
-            width: 20%;
-            height: 600px;
-            position: absolute;
-        }
+            
+       }
+        
         header{
             background: #b1ddba;
-            padding:1em;
+            
             
         }
-        section{
+        .section{
             background: #c47bf9;
-            padding:1em;
+      
         }
         footer{
-            background: #5095c3;
-            padding:1em;
-            position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 200px;
+         background: #5095c3;
+            
         }
-        header,
-section,
-footer {
+        header, .section, footer {
     height: 200px;
-    padding: 20px;
-    border: 1px solid #ccc; /* Solo para visualización, puedes quitarlo */
+    padding: 1em;
 }
+        
+a{
+    color: whitesmoke;
+}
+li{
+    text-align: left;
+    
+}
+@media screen and (min-width: 600px) {
+     /*INICIAN ESTILOS DE TABLET*/
+     /*TERMINAN ESTILOS DE TABLET*/   
+     nav{
+            float: left;
+            width: 20%;
+            height: 600px;
+
+            
+        }
+        header, .section, footer, nav {
+    height: 200px;
+
+    
+}
+footer{
+            clear:left;
+        
+            
+        }
+        @media screen and (min-width: 1024px) {
+            body{
+            background: #2eb13c;
+            margin: 0;
+            padding: 0;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+        nav{
+            background: #969418;
+            
+       }
+        
+        header{
+            background: #871136;
+            
+            
+        }
+        .section{
+            background: #79789b;
+      
+        }
+        footer{
+         background: #cf7d7d;
+        }
+    }
     </style>
 </head>
 <body>
@@ -66,15 +109,16 @@ footer {
                     <li><a href="#">Contacto</a></li>
                 </ul>
             </nav>
-
-            <section>
-                <h2>Sección 1</h2>
-                <p>Contenido de la primera sección.</p>
+            <section class="Seccion">
+                <section>
+                    <h2>Sección 1</h2>
+                    <p>Contenido de la primera sección.</p>
+                </section>
+    
+                <section class="Seccion">
+                    <h2>Sección 2</h2>
+                    <p>Contenido de la segunda sección.</p>
             </section>
-
-            <section>
-                <h2>Sección 2</h2>
-                <p>Contenido de la segunda sección.</p>
             </section>
     </main>
     <footer>
