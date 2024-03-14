@@ -5,87 +5,119 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Título de la página</title>
     <!-- Aquí puedes agregar enlaces a tus archivos CSS si los tienes -->
-    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <link rel="stylesheet" href="flexboxgrid.min.css">
     <style>
         body{
-            background: #f0e9d8;
+            background: #c28bf3;
             margin: 0;
             padding: 0;
             color: rgb(0, 0, 0);
             text-align: center;
             font-size: 16px;
             box-sizing: border-box;
-            position:relative
         }
         nav{
             background: #e19ace;
-            padding:1em;
-            top: 0;
-            left: 0;
-            width: 20%;
-            height: 600px;
-            position: absolute;
             
-        }
-        nav a {
-    color: #fff; 
-}
+       }
+        
         header{
             background: #b1ddba;
-            padding:1em;
+            
             
         }
-        section{
+        .section{
             background: #c47bf9;
-            padding:1em;
+      
         }
         footer{
-            background: #5095c3;
-            padding:1em;
-            position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 200px;
+         background: #5095c3;
+            
         }
-        header,
-section,
-footer {
+        header, .section, footer {
     height: 200px;
-    padding: 20px;
-    border: 1px solid #ccc; /* Solo para visualización, puedes quitarlo */
+    padding: 1em;
 }
+        
+a{
+    color: whitesmoke;
+}
+li{
+    text-align: left;
+    
+}
+@media screen and (min-width: 600px) {
+     /*INICIAN ESTILOS DE TABLET*/
+    header, .section, footer {
+        height: 200px;
+    }   
+}
+
+        @media screen and (min-width: 1024px) {
+            body{
+            background: #2eb13c;
+            margin: 0;
+            padding: 0;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+        nav{
+            background: #969418;
+            
+       }
+        
+        header{
+            background: #c2788f;
+            
+            
+        }
+        .section{
+            background: #79789b;
+      
+        }
+        footer{
+         background: #cf7d7d;
+        }
+    }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Encabezado de la página</h1>
-    </header>
-    <main>
-            <nav>
-                <ul>
+    <div class="row">
+        <header class="col-xs-12">
+            <h1 class="box"> Encabezado de la página</h1>
+        </header>
+    </div>
+    <main class="row">
+            <nav class="col-xs-12 col-sm-3 col-md-2">
+                <ul class="box">
                     <li><a href="#">Inicio</a></li>
                     <li><a href="#">Acerca de</a></li>
                     <li><a href="#">Servicios</a></li>
                     <li><a href="#">Contacto</a></li>
                 </ul>
             </nav>
-
-            <section>
-                <h2>Sección 1</h2>
-                <p>Contenido de la primera sección.</p>
-            </section>
-
-            <section>
-                <h2>Sección 2</h2>
-                <p>Contenido de la segunda sección.</p>
+            <section class="col-xs-12 col-sm-9 col-md-10">
+                <section class="seccion box">
+                    <h2>Sección 1</h2>
+                    <p>Contenido de la primera sección.</p>
+                </section>
+    
+                <section class="Seccion box">
+                    <h2>Sección 2</h2>
+                    <p>Contenido de la segunda sección.</p>
+                </section>
             </section>
     </main>
-    <footer>
-        <p>Pie de página - © 2024 Nombre de tu empresa</p>
-    </footer>
-
+   
+    <div class="row">
+        <footer class="col-xs-12">
+            <p class="box">Pie de página - © 2024 Nombre de tu empresa</p>
+        </footer>
+    </div>
     <!-- Aquí puedes agregar enlaces a tus archivos JavaScript si los tienes -->
     <!-- <script src="script.js"></script> -->
 </body>
 </html>
+    
