@@ -23,19 +23,14 @@
         
         header{
             background: #b1ddba;
-            
-            
         }
         .section{
             background: #c47bf9;
-      
         }
         footer{
-         background: #5095c3;
-            
+         background: #5095c3;   
         }
         header, .section, footer {
- 
     padding: 1em;
 }
         
@@ -47,38 +42,30 @@ li{
     
 }
 @media screen and (min-width: 600px) {
-     /*INICIAN ESTILOS DE TABLET*/
-     /*TERMINAN ESTILOS DE TABLET*/   
+     /*INICIAN ESTILOS DE TABLET*/  
      main{
-        display: flex;
+        display:grid;
+        grid-template-columns: 20% 80%;
+        grid-template-rows: 200px 200px;
      }
      nav{
-   
-        
-            width: 20%;
-                   
+         grid-row-start: 1;
+         grid-row-end: 3;          
         }
-    }
-        main > section{
-  
-            flex:1;
-              
-                }
-        header, .section, footer, nav {
-    height: 200px;
-
-    
+ header, .section, footer, nav {
+    height: 200px; 
 }
+.section{
+    height: 168px;
+}
+/*TERMINAN ESTILOS DE TABLET*/ 
+    }
+        
+       
 
         @media screen and (min-width: 1024px) {
             body{
-            background: #2eb13c;
-            margin: 0;
-            padding: 0;
-            color: rgb(0, 0, 0);
-            text-align: center;
-            font-size: 16px;
-            box-sizing: border-box;
+            background: #98e1a0;
         }
         nav{
             background: #969418;
@@ -86,16 +73,16 @@ li{
        }
         
         header{
-            background: #c2788f;
+            background: #94cd52;
             
             
         }
         .section{
-            background: #79789b;
+            background: #096a1b;
       
         }
         footer{
-         background: #cf7d7d;
+         background: #159850;
         }
     }
     </style>
